@@ -1134,10 +1134,7 @@ footer .container{
         min-height: 20%;
     }
 
-    .img-3 {
-        background-image: url("https://bit.ly/2PCNp5R");
-        min-height: 12%;
-    }
+    
 
     .center {
         display: flex;
@@ -1161,12 +1158,12 @@ footer .container{
         width: 96%;
         margin: 1vh auto;
         font-size: 1em;
-        height: 50%;
+        height: 60%;
     }
 
     .about_para {
         display: flex;
-        height: 30%;
+        height: 35%;
     }
 
     h3 {
@@ -1223,4 +1220,190 @@ footer .container{
         width: 10%;
         height: 10%;
     }
+}
+
+@media only screen and (max-width: 375px){
+       /* 1st row */
+       body {
+           background: black;
+       }
+
+       h2 {
+           font-size: 15px;
+       }
+
+       .column {
+           float: left;
+           width: 50%;
+           text-align: left;
+       }
+
+
+       /* Clear floats after the columns */
+
+       .row:after {
+           content: "";
+           display: table;
+           clear: both;
+       }
+
+
+       /* avartar */
+
+       .avatar {
+           border-radius: 5%;
+           width: 140px;
+           height: 140px;
+           margin: 10px;
+           object-fit: cover
+       }
+
+       .header-text {
+           text-align: left;
+       }
+
+
+       /* about me */
+
+       .about-title {
+           color: white;
+           margin: top;
+           padding-top: 10px;
+           font-size: 20px;
+       }
+
+       .aboutme {
+           font-family: 'Rokkitt', serif;
+           color: white;
+
+       }
+
+
+       .resume p {
+           color: white;
+           font-size: 1px;
+
+       }
+
+
+       /*The Parallax Effect*/
+
+       body,
+       html {
+           margin: 0;
+           font: 400 15px "Lato", sans-serif;
+       }
+
+       .img-1,
+       .img-2,
+       .img-3 {
+
+           background-attachment: fixed;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+
+       .img-1 {
+           background-image: url("https://c0.wallpaperflare.com/preview/524/860/912/screen-code-coding-programming.jpg");
+           /* background-image: url("https://c4.wallpaperflare.com/wallpaper/746/473/70/jellyfish-fantasy-art-adventurers-colorful-wallpaper-preview.jpg"); */
+           min-height: 25%;
+           background-position: left;
+       }
+
+       .img-2 {
+           background-image: url("https://c1.wallpaperflare.com/preview/683/641/140/animal-aquarium-aquatic-black.jpg");
+           min-height: 20%;
+       }
+
+       .img-3 {
+           background-image: url("https://bit.ly/2PCNp5R");
+           min-height: 12%;
+       }
+
+       .center {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .center h1,
+       .center h2 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 37vw;
+           height: 5vh;
+           border: 4px solid whitesmoke;
+           color: white;
+           background: rgba(0, 0, 0, .8);
+       }
+
+       .about_para p {
+           width: 96%;
+           margin: 1vh auto;
+           font-size: 1em;
+           height: 60%;
+       }
+
+       .about_para {
+           display: flex;
+           height: 35%;
+       }
+
+       h3 {
+           letter-spacing: 5px;
+           text-align: center;
+           text-transform: uppercase;
+           font: 20px "Lato", sans-serif;
+           color: white;
+           margin-top: 40px;
+       }
+
+       .skills {
+           display: flex;
+           justify-content: space-evenly;
+           margin: 2vh auto;
+
+       }
+
+       .skills i {
+           font-size: 1.3em;
+       }
+
+       .html {
+           color: orange;
+       }
+
+       .css {
+           color: blue;
+       }
+
+       .js {
+           color: #F1C40F;
+       }
+
+       .github {
+           color: purple;
+       }
+
+       .react {
+           color: #47F8E2;
+       }
+
+       .nodejs {
+           color: green;
+       }
+
+       .sql {
+           width: 5%;
+           height: 5%;
+       }
+
+       .json {
+           padding-top: 4px;
+           width: 10%;
+           height: 10%;
+       }
+    
 }
