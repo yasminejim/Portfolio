@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Rokkitt&display=swap');
+
+/* 
+font-family: 'Rokkitt', serif;
+font-family: 'Cinzel', serif;
+ */
+
+* {
+    box-sizing: border-box;
+    background-color:black;
+   
+}
+body{
+    background:black;
+}
+
+h1,
+h2,
+a {
+    font-family: 'Cinzel', serif;
+}
+
+p,
+label,
+input,
+textarea {
+    font-family: 'Rokkitt', serif;
+    color:white;
+}
+
+body,
+html {
+    height: 90%;
+    margin-top: 10px;
+}
+
+ 
+/* nav bar */
+ .nav {
+     
+    
+     justify-content: end;
+     width: 100%;
+     background:black;
+ }
+.nav a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    background:black;
+    
+}
+
+.nav a:active,
+.nav-link:hover {
+    color: rgb(230, 62, 230);
+    
+}
+
+
+/**************************************************** Home Page  *******************************************************/
+
+
+/* 1st row */
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* avartar */
+
+.avatar {
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    margin: 55px;
+    object-fit: cover
+}
+
+.header-text {
+    text-align: left;
+}
+
+
+/* about me */
+
+.about-title{
+    color:white;
+    align-items: center;
+    padding-top: 10px;
+}
+.aboutme {
+    font-family: 'Rokkitt', serif;
+    color:white;
+}
+
+.resume p {
+   color:white;
+   font-size:1px;
+}
+
+
+/*The Parallax Effect*/
+
+body,
+html {
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-1 {
+    background-image: url("https://c0.wallpaperflare.com/preview/524/860/912/screen-code-coding-programming.jpg");
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/746/473/70/jellyfish-fantasy-art-adventurers-colorful-wallpaper-preview.jpg"); */
+    min-height: 30%;
+}
+
+.img-2 {
+    background-image: url("https://c1.wallpaperflare.com/preview/683/641/140/animal-aquarium-aquatic-black.jpg");
+    min-height: 200px;
+}
+
+.img-3 {
+    background-image: url("https://bit.ly/2PCNp5R");
+    min-height: 200px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center h1,
+.center h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+    border: 4px solid whitesmoke;
+    color: white;
+    background: rgba(0, 0, 0, .8);
+}
+
+.about_para p {
+    width: 85%;
+    margin: 10vh auto;
+    font-size: 1.3em;
+}
+
+.about_para {
+    display: flex;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color:white;
+    margin-top: 40px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6vh auto;
+}
+
+.skills i {
+    font-size: 2.5em;
+}
+
+.html {
+    color: orange;
+}
+
+.css {
+    color: blue;
+}
+
+.js {
+    color: #F1C40F;
+}
+
+.github {
+    color: purple;
+}
+
+.react {
+    color: #47F8E2;
+}
+
+.nodejs {
+    color: green;
+}
+.sql{
+    width:3%;
+    height:3%;
+}
+.json{
+    padding-top: 10px;
+    width:3%;
+    height:3%;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+
+    .img-1,
+    .img-2,
+    .img-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+/* End of Parallax Effect*/
+
+
+/**************************************************** Portfolio Page  *******************************************************/
+
+.text-center {
+    width: 90%;
+    margin: auto;
+}
+
+.project-img {
+    height: 350px;
+    width: 550px;
+    object-fit: cover;
+    object-position: 0;
+}
+
+a.links {
+    text-decoration: none;
+    color: rgb(218, 45, 218);
+}
+
+
+/**************************************************** Contact Page  *******************************************************/
+
+
+/* Hero */
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg");
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        border: 4px solid whitesmoke;
+        color:white;
+        background: rgba(0, 0, 0, .8);
+}
+
+
+/* Form */
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color:white;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=subject] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Style the container/contact section */
+
+.container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px 10px 45px 10px;
+    height:40px;
+}
+
+
+/* Create two columns that float next to eachother */
+
+.column2 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Contact Info */
+
+.contact-info {
+    /* border: 1px solid pink; */
+    margin: 50px 20px;
+    font-size: 1.4em;
+}
+
+.contact-info span {
+    font-weight: bolder;
+}
+
+
+/* main .main-products{
+border-top:50px ;
+} */
+/* Product Cards*/
+
+.container {
+    padding-top:50px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    padding:10px;
+    margin-top:20px;
+    border-top: 50px;
+}
+
+.card {
+    background:white;
+    width:100%;
+    height: 450px;
+    margin: 25px;
+    
+    /* border-radius: 15px; */
+}
+
+.card-image {
+    height: 750px;
+    margin-bottom: 15px;
+    background-size: cover;
+    /* border-radius: 15px; */
+    background-position:top;
+}
+
+/*Card images*/
+.project-1 {
+    background-image: url('images/Gateway.png');
+}
+
+.project-2 {
+    background-image: url('images/SocialJustice.png');
+}
+
+.project-3 {
+    background-image: url('images/HopeHacks.png');
+}
+
+.project-4 {
+    background-image: url('images/EcomReact.png');
+}
+
+.project-5 {
+    background-image: url('images/Deja-vu.jpeg');
+}
+
+.project-6 {
+    background-image: url('images/Espresso.jpeg');
+}
+
+
+
+.card h2 {
+    margin-bottom: -50px;
+    padding: 1px;
+    text-align: center;
+    color: black;
+    background:white;
+}
+
+.card h3 {
+    font-size: 15px;
+    margin-bottom: -5px;
+    padding: 5px;
+    text-align: center;
+    color:black;
+    background:white;
+}
+
+.card p {
+    margin-bottom: -5px;
+    padding: 10px;
+    text-align: center;
+    color:black;
+    font-size: 15px;
+    text-shadow: 2px 2px white;
+    background:white;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.cartbuttonForm {
+    margin:auto;
+    background:white;
+    border-radius: 15px 15px 0 0;
+    padding-bottom:10px; 
+}
+.cartbuttonForm form{
+    background:white;
+    border-radius: 15px 15px 0 0;
+}
+
+.inputBox1 input[type="submit"] {
+    width: 100px;
+    background-color: rgb(237, 237, 237);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 12px 12px;
+    
+}
+
+.inputBox1:hover {
+    color: black;
+    transform: scale(1.03);
+}
+
+
+/*Responsive Product Cards*/
+@media screen and (max-width:768px) {
+
+    .container {
+        padding: 70px;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card {
+        width: 260px;
+        height: 380px;
+        background: rgb(108, 74, 74);
+        margin: 15px;
+        border-radius: 10px;
+    }
+
+    .card-image {
+        height: 200px;
+        margin-bottom: 1px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+        background-position: center;
+    }
+
+    .cartbuttonForm {
+        padding: 20px 75px;
+        margin-top: 30px;
+    }
+}
+
+.fab fa-google-plus-g{
+    color:white;
+}
+
