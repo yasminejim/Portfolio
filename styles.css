@@ -12,6 +12,7 @@ font-family: 'Cinzel', serif;
 }
 body{
     background:black;
+    margin:0;
 }
 
 h1,
@@ -58,238 +59,35 @@ html {
 }
 
 
-/**************************************************** Home Page  *******************************************************/
 
+/* Contact Form */
 
-/* 1st row */
-
-.column {
-    float: left;
-    width: 50%;
-    text-align: left;
-}
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* avartar */
-
-.avatar {
-    border-radius: 50%;
-    width: 240px;
-    height: 240px;
-    margin: 55px;
-    object-fit: cover
-}
-
-.header-text {
-    text-align: left;
-}
-
-
-/* about me */
-
-.about-title{
-    color:white;
-    align-items: center;
-    padding-top: 10px;
-}
-.aboutme {
-    font-family: 'Rokkitt', serif;
-    color:white;
-}
-
-.resume p {
-   color:white;
-   font-size:1px;
-}
-
-
-/*The Parallax Effect*/
-
-body,
-html {
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-}
-
-.img-1,
-.img-2,
-.img-3 {
-    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-1 {
-    background-image: url("https://c0.wallpaperflare.com/preview/524/860/912/screen-code-coding-programming.jpg");
-    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/746/473/70/jellyfish-fantasy-art-adventurers-colorful-wallpaper-preview.jpg"); */
-    min-height: 30%;
-}
-
-.img-2 {
-    background-image: url("https://c1.wallpaperflare.com/preview/683/641/140/animal-aquarium-aquatic-black.jpg");
-    min-height: 200px;
-}
-
-.img-3 {
-    background-image: url("https://bit.ly/2PCNp5R");
-    min-height: 200px;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center h1,
-.center h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 10vh;
-    border: 4px solid whitesmoke;
-    color: white;
-    background: rgba(0, 0, 0, .8);
-}
-
-.about_para p {
-    width: 85%;
-    margin: 10vh auto;
-    font-size: 1.3em;
-}
-
-.about_para {
-    display: flex;
-}
-
-h3 {
-    letter-spacing: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color:white;
-    margin-top: 40px;
-}
-
-.skills {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 6vh auto;
-}
-
-.skills i {
-    font-size: 2.5em;
-}
-
-.html {
-    color: orange;
-}
-
-.css {
-    color: blue;
-}
-
-.js {
-    color: #F1C40F;
-}
-
-.github {
-    color: purple;
-}
-
-.react {
-    color: #47F8E2;
-}
-
-.nodejs {
-    color: green;
-}
-.sql{
-    width:3%;
-    height:3%;
-}
-.json{
-    padding-top: 10px;
-    width:3%;
-    height:3%;
-}
-
-
-/* Turn off parallax scrolling for tablets and phones */
-
-@media only screen and (max-device-width: 1024px) {
-
-    .img-1,
-    .img-2,
-    .img-3 {
-        background-attachment: scroll;
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+            url("https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg");
+        height: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
     }
-}
 
+    h1 {
+        font-size: 30px;
+        padding: 5px;
+    }
 
-/* End of Parallax Effect*/
-
-
-/**************************************************** Portfolio Page  *******************************************************/
-
-.text-center {
-    width: 90%;
-    margin: auto;
-}
-
-.project-img {
-    height: 350px;
-    width: 550px;
-    object-fit: cover;
-    object-position: 0;
-}
-
-a.links {
-    text-decoration: none;
-    color: rgb(218, 45, 218);
-}
-
-
-/**************************************************** Contact Page  *******************************************************/
-
-
-/* Hero */
-
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("https://c4.wallpaperflare.com/wallpaper/851/501/292/programming-code-minimalism-wallpaper-preview.jpg");
-    height: 40%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-        border: 4px solid whitesmoke;
-        color:white;
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid whitesmoke;
+        color: white;
         background: rgba(0, 0, 0, .8);
-}
 
-
-/* Form */
+    }
 
 input[type=text],
 textarea {
@@ -342,15 +140,27 @@ input[type=submit]:hover {
     height:40px;
 }
 
+    /* Create two columns that float next to eachother */
+    .map {
+        width: 99%;
+        height: 100%
+    }
 
-/* Create two columns that float next to eachother */
+    .column1 {
+        float: left;
+        height: 420px;
+        width: 50%;
+        padding-top: 35px;
 
-.column2 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-}
+    }
+
+    .column2 {
+        float: right;
+        width: 50%;
+        height: 650px;
+
+    }
+
 
 
 /* Clear floats after the columns */
@@ -467,7 +277,7 @@ input[type=submit]:hover {
     .column1 {
         float:left;
         height: 420px;
-        width:50%;
+        width:49%;
         padding-top:35px;
       
     }
@@ -625,24 +435,13 @@ h1{
   
 }
 
-
-
-
-
-/* main .main-products{
-border-top:50px ;
-} */
 /* Project Cards*/
 
 .container {
-    padding-top:50px;
-    margin: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 80px;
     padding:10px;
-    margin-top:20px;
     border-top: 50px;
 }
 
@@ -754,15 +553,7 @@ border-top:50px ;
 /*Responsive Product Cards*/
 @media screen and (max-width:768px) {
 .container {
-    padding-top: 50px;
     margin: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 80px;
-    padding: 10px;
-    margin-top: 20px;
-    border-top: 50px;
 }
 
 .card {
@@ -874,12 +665,9 @@ border-top:50px ;
 
 @media only screen and (max-width: 414px) {
   .container {
-      padding-top: 50px;
-    
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding-bottom: 80px;
       padding: 10px;
       margin-top: 20px;
       border-top: 50px;
