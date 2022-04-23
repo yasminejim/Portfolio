@@ -25,9 +25,10 @@ textarea {
 }
 
 body,
-html {
+html
+ {
     height: 100%;
-    margin: 90px;
+   
 }
 
 
@@ -915,7 +916,7 @@ h2 {
 body,
 html {
     margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
+    font: 400 15px "Lato", sans-serif;
 }
 
 .img-1,
@@ -937,7 +938,7 @@ html {
 
 .img-2 {
     background-image: url("https://c1.wallpaperflare.com/preview/683/641/140/animal-aquarium-aquatic-black.jpg");
-    min-height: 10%;
+    min-height: 20%;
 }
 
 .img-3 {
@@ -964,7 +965,7 @@ html {
 }
 
 .about_para p {
-    width: 85%;
+    width: 95%;
     margin: 1vh auto;
     font-size: 1em;
     height: 55%;
@@ -972,7 +973,7 @@ html {
 
 .about_para {
     display: flex;
-    height: 40%;
+    height: 25%;
 }
 
 h3 {
@@ -1020,14 +1021,21 @@ h3 {
 }
 
 .sql {
-    width: 3%;
-    height: 3%;
+    width: 5%;
+    height: 5%;
 }
 
 .json {
-    padding-top: 10px;
-    width: 3%;
-    height: 3%;
+    padding-top: 4px;
+    width: 10%;
+    height: 10%;
+}
+
+footer{
+    height:15%;
+}
+footer .container{
+    height:25%;
 }
 }
 
@@ -1101,7 +1109,7 @@ h3 {
     body,
     html {
         margin: 0;
-        font: 400 15px/1.8 "Lato", sans-serif;
+        font: 400 15px "Lato", sans-serif;
     }
 
     .img-1,
@@ -1123,7 +1131,7 @@ h3 {
 
     .img-2 {
         background-image: url("https://c1.wallpaperflare.com/preview/683/641/140/animal-aquarium-aquatic-black.jpg");
-        min-height: 10%;
+        min-height: 20%;
     }
 
     .img-3 {
@@ -1150,15 +1158,15 @@ h3 {
     }
 
     .about_para p {
-        width: 95%;
+        width: 96%;
         margin: 1vh auto;
         font-size: 1em;
-        height: 55%;
+        height: 50%;
     }
 
     .about_para {
         display: flex;
-        height: 40%;
+        height: 30%;
     }
 
     h3 {
@@ -1206,13 +1214,13 @@ h3 {
     }
 
     .sql {
-        width: 3%;
-        height: 3%;
+        width: 5%;
+        height: 5%;
     }
 
     .json {
-        padding-top: 10px;
-        width: 3%;
-        height: 3%;
+        padding-top: 4px;
+        width: 10%;
+        height: 10%;
     }
 }
