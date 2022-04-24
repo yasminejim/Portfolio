@@ -582,12 +582,7 @@ h3 {
     height: 10%;
 }
 
-footer{
-    height:20%;
-}
-footer .container{
-    height:25%;
-}
+
 }
 
 @media only screen and (max-width: 390px) {
@@ -771,13 +766,7 @@ footer .container{
         height: 10%;
     }
 
-    footer {
-        height: 20%;
-    }
-
-    footer .container {
-        height: 25%;
-    }
+   
 }
 
 @media only screen and (max-width: 375px){
@@ -963,11 +952,5 @@ footer .container{
            width: 10%;
            height: 10%;
        }
-    footer {
-        height: 20%;
-    }
-
-    footer .container {
-        height: 25%;
-    }
+   
 }

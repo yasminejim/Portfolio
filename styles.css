@@ -328,6 +328,7 @@ h1{
     padding:5px;
 }
   .hero-text {
+    
       text-align: center;
       position: absolute;
       top: 15%;
@@ -490,7 +491,7 @@ h1{
 
 
 .card h2 {
-    margin-bottom: -50px;
+  
     padding: 1px;
     text-align: center;
     color: black;
@@ -515,11 +516,11 @@ h1{
     text-shadow: 2px 2px white;
     background:white;
 }
-
+/* 
 .card:hover {
     transform: scale(1.03);
     transition: all 1s ease;
-}
+} */
 
 .cartbuttonForm {
     margin:auto;
